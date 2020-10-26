@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>6279c845-92f8-4333-ab99-3d213163593c</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>PadController.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Bank\AssetManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Bank\Components\Effects\Chorus.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Bank\Components\Effects\Delay.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Bank\Components\Effects\Flanger.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Bank\Components\Effects\IAudioEffect.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Bank\Components\Enum.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Bank\Components\Envelope.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Bank\Components\Filter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Bank\Components\Generators\Generator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Bank\Components\Generators\GeneratorParameters.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Bank\Components\Generators\SampleGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Bank\Components\Generators\SawGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Bank\Components\Generators\SineGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Bank\Components\Generators\SquareGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Bank\Components\Generators\TriangleGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Bank\Components\Generators\WhiteNoiseGenerator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Bank\Components\LFO.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Bank\DescriptorList.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Bank\Descriptors\CustomDescriptor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Bank\Descriptors\EnvelopeDescriptor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Bank\Descriptors\FilterDescriptor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Bank\Descriptors\GeneratorDescriptor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Bank\Descriptors\IDescriptor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Bank\Descriptors\LFODescriptor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Bank\PatchAsset.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Bank\PatchBank.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Bank\Patches\BasicPatch.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Bank\Patches\Fm2Patch.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Bank\Patches\MultiPatch.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Bank\Patches\Patch.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Bank\Patches\Sf2Patch.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Bank\Patches\SfzPatch.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Bank\SampleDataAsset.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\CrossPlatformHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Midi\Event\MetaDataEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Midi\Event\MetaEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Midi\Event\MetaNumberEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Midi\Event\MetaTextEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Midi\Event\MidiEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Midi\Event\RealTimeEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Midi\Event\SystemCommonEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Midi\Event\SystemExclusiveEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Midi\MidiFile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Midi\MidiHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Midi\MidiTrack.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Sequencer\MidiFileSequencer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Sequencer\MidiInputSequencer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Sf2\Chunks\GeneratorChunk.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Sf2\Chunks\InstrumentChunk.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Sf2\Chunks\ModulatorChunk.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Sf2\Chunks\PresetHeaderChunk.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Sf2\Chunks\SampleHeaderChunk.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Sf2\Chunks\ZoneChunk.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Sf2\Enum.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Sf2\Generator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Sf2\Instrument.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Sf2\Modulator.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Sf2\ModulatorType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Sf2\PresetHeader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Sf2\SampleHeader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Sf2\Sf2Region.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Sf2\SoundFont.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Sf2\SoundFontInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Sf2\SoundFontPresets.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Sf2\SoundFontSampleData.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Sf2\Zone.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Sfz\SfzReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Sfz\SfzRegion.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Synthesizer\Synthesizer.Constants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Synthesizer\Synthesizer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Synthesizer\Synthesizer.MidiControl.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Synthesizer\SynthHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Synthesizer\Voice.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Synthesizer\VoiceManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Synthesizer\VoiceParameters.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Util\IOHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Util\PitchShift.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Util\Riff\Chunk.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Util\Riff\CueChunk.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Util\Riff\DataChunk.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Util\Riff\FactChunk.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Util\Riff\FormatChunk.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Util\Riff\InstrumentChunk.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Util\Riff\LabelChunk.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Util\Riff\LabeledTextChunk.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Util\Riff\ListChunk.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Util\Riff\NoteChunk.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Util\Riff\PlaylistChunk.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Util\Riff\RiffTypeChunk.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Util\Riff\SamplerChunk.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Util\Riff\UnknownChunk.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Util\Tables.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Util\TimeStretch.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Wave\WaveFile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Wave\WaveFileReader.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Wave\WaveFileWriter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Wave\WaveHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\PadController.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\SynthTransitioner.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)PadController\SynthWaveProvider.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Patches\AboutBank Structure.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Patches\TestBank\testbank.txt" />
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Patches\TestBank\fmstarter.patch">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Patches\TestBank\NoiseDrum.patch">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Patches\TestBank\testbank.bank">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="$(MSBuildThisFileDirectory)Assets\SharedAssets.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="$(MSBuildThisFileDirectory)Strings\en\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)PadController\AudioSynthesis\Synthesizer\" />
+  </ItemGroup>
+</Project>

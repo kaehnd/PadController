@@ -1,0 +1,47 @@
+PATCH v1.000
+fm2
+
+<fm2c>
+cIndex = 1d,
+mIndex = 1d,
+feedback = 0d,
+sync = soft&
+</fm2c>
+
+<GENERATOR>
+type = triangle,
+loopmode = continuous
+</GENERATOR>
+
+<ENVELOPE>
+attacktime = .001,
+releasetime = .01,
+sustainlevel = .30,
+attacklevel = .45
+</ENVELOPE>
+
+<Filter>
+type = lowpass,
+cutoff = 10,
+a1 = 10
+</Filter>
+
+<GENERATOR>
+type = square,
+loopmode = continuous
+</GENERATOR>
+
+<ENVELOPE>
+attacktime = .001,
+releasetime = .01,
+sustainlevel = .5,
+attacklevel = .5
+</ENVELOPE>
+
+<Filter>
+type = lowpass,
+cutoff = 10
+</Filter>
+
+<LFO>
+</LFO>

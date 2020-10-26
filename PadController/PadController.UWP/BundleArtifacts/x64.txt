@@ -1,0 +1,2 @@
+MainPackage=C:\dev\PadController\PadController\PadController.UWP\bin\x64\Release\PadController.UWP_0.0.0.0_x64.msix
+SymbolPackage=C:\dev\PadController\PadController\PadController.UWP\obj\x64\Release\Symbols\PadController.UWP_0.0.0.0_x64.appxsym
